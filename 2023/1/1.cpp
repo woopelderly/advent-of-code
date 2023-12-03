@@ -24,5 +24,5 @@ namespace aoc_1
 
 int main()
 {
-    std::cout << aoc_1::decode( aoc_1::input ) << '\n';
+    std::cout << aoc_1::decode( std::move( aoc_1::input ) ) << '\n';
 }
