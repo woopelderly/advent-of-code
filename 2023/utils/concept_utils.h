@@ -3,7 +3,7 @@
 #include <concepts>
 #include <iterator>
 
-namespace concept_utils
+namespace utils
 {
     // https://stackoverflow.com/a/70543294
     template< typename ContainerType_t >

@@ -1,5 +1,5 @@
-#include "concept_utils.h"
 #include "input.h"
+#include "../utils/concept_utils.h"
 
 #include <algorithm>
 #include <cctype>
@@ -10,7 +10,7 @@
 
 namespace aoc_1
 {
-    [[nodiscard]] std::uint64_t constexpr decode( concept_utils::Container auto scrambed_data )
+    [[nodiscard]] std::uint64_t constexpr decode( utils::Container auto scrambed_data )
     {
         return std::accumulate(
             scrambed_data.begin(), scrambed_data.end(), 0, []( std::uint64_t total, std::string const& input ) {
